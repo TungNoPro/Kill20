@@ -1,0 +1,9 @@
+while wait() do
+local args = {
+  [1] = "Kill", 
+  [2] = "Level 20"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("NPC"):FireServer(unpack(args))
+wait(0)
+end
